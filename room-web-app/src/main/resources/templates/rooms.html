@@ -11,10 +11,10 @@
       <th>Room Name</th>
       <th>Bed Info</th>
     </tr>
-    <tr th:each="room:${rooms}">
-      <td th:text="${room.number}">Number</td>
+    <tr th:each="room:${rooms}">  <!-- this is a loop -->
+      <td th:text="${room.number}">Number</td> <!--Replace inner HTML/text with room.number value-->
       <td th:text="${room.name}">Name</td>
-      <th th:text="${room.info}">Info</th>
+      <th th:text="${room.info}">Info</th> <!-- number,name,infö are placeholder text that replaces empty value if there is no data-->
     </tr>
   </table>
 
